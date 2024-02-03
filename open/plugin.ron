@@ -1,0 +1,12 @@
+(
+    name: "Recently-opened repository search",
+    description: "Syntax: { code | > } <folder>\nExample: code backend",
+    query: (
+        regex: "^(>|code ).*",
+        help: "code",
+        no_sort:true,
+        isolate: true,
+    ),
+    bin: (path: "open.sh"),
+    icon: Name("system-search"),
+)
